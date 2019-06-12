@@ -36,7 +36,7 @@ GET http://localhost:8080/plans
 ```
 
 ```
-curl -X GET http://localhost:8080/plans  -d '{"planId":1,"name":"Bobby","email":"example@example.com","phone":"+ 49 30 738788"}'
+curl -X GET http://localhost:8080/plans
 ```
 
 example response:
@@ -67,7 +67,7 @@ GET http://localhost:8080/plans?currency=USD
 ```
 
 ```curl
-curl -X GET 'http://localhost:8080/plans?currency=USD'  -d '{"planId":1,"name":"Bobby","email":"example@example.com","phone":"+ 49 30 738788"}'
+curl -X GET 'http://localhost:8080/plans?currency=USD'
 ```
 
 example response:
