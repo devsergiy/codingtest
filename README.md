@@ -14,6 +14,11 @@ install dep
 $ curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 ```
 
+run dep ensure
+```
+$ dep ensure
+```
+
 to run project:
 ```
 $ go run main.go
