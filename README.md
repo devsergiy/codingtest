@@ -1,6 +1,6 @@
 # coding test
 
-# prerequisites
+## prerequisites
 
 install golang
 
@@ -24,13 +24,13 @@ Server will start on
 http://localhost:8080
 ```
 
-Available queries
+## Available queries
 * GET http://localhost:8080/plans
 * POST http://localhost:8080/subscribe
 
-# plans
+### plans
 
-get list of plans
+#### get list of plans
 ```
 GET http://localhost:8080/plans
 ```
@@ -60,7 +60,8 @@ example response:
 ]
 ```
 
-get list of plans for particular currency
+####  get list of plans for particular currency
+
 ```
 GET http://localhost:8080/plans?currency=USD
 ```
@@ -90,13 +91,13 @@ example response:
 ]
 ```
 
-# subscribe
+### subscribe
 
 ```
 POST http://localhost:8080/subscribe
 ```
 
-valid query
+#### valid query
 
 ```
 curl -X POST http://localhost:8080/subscribe  -d '{"planId":1,"name":"Bobby","email":"example@example.com","phone":"+ 49 30 738788"}'
@@ -112,7 +113,7 @@ example response:
 }
 ```
 
-invalid query
+#### invalid query
 
 ```
 curl -X POST http://localhost:8080/subscribe  -d '{}'
@@ -128,7 +129,7 @@ example response:
 }
 ```
 
-query with invalid phone
+#### query with invalid phone
 ```
 curl -X POST http://localhost:8080/subscribe -d '{"planId":1,"name":"Bobby","email":"example@example.com","phone":"+380500000000"}'
 ```
